@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Фильматека</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="" />
+    <!-- <link rel="stylesheet" href="./font-family.css"> -->
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&amp;subset=cyrillic-ext"
+        rel="stylesheet">
+    <script src="./js/index.js" defer></script>
+</head>
+
+<body>
+    <div class="container user-content pt-35">
+        <h1 class="title-1"> Фильмотека</h1>
+        <div class="user-content-row" id="film-js">
+            <div class="card mb-20">
+                <h4 class="title-4">Такси 2</h4>
+                <div class="badge">комедия</div>
+                <div class="badge">2000</div>
+            </div>
+            <div class="card mb-20">
+                <h4 class="title-4">Облачный атлас</h4>
+                <div class="badge">драма</div>
+                <div class="badge">2012</div>
+            </div>
+        </div>
+        <div class="panel-holder mt-80 mb-40">
+            <div class="title-4 mt-0">Добавить фильм</div>
+            <form id="form-js">
+                <div id="message-js"></div>
+                <label class="label-title">Название фильма</label>
+                <input class="input" type="text" placeholder="Такси 2" name="title" id="input-title-js" />
+                <div class="row">
+                    <div class="col">
+                        <label class="label-title">Жанр</label>
+                        <input class="input" type="text" placeholder="комедия" name="genre" id="input-genre-js" />
+                    </div>
+                    <div class="col">
+                        <label class="label-title">Год</label>
+                        <input class="input" type="text" placeholder="2000" name="year" id="input-year-js" />
+                    </div>
+                </div>
+                <button class="button" type="button" id="add-js" disabled>Добавить </button>
+            </form>
+        </div>
+    </div>
+    
+</body>
+
+</html>
